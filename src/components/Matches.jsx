@@ -8,31 +8,20 @@ function Matchs() {
           team1: {
             name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [{ name: "لاعب 3", yellowCard: true, redCard: false }],
-          },
-          team2: {
-            name: "اسم الفريق",
-            logo: "/user-images/user.png",
-            players: [{ name: "لاعب 3", yellowCard: false, redCard: true }],
-          },
-          time: "04:00",
-          ended: {
-            team1Score: 1,
-            team2Score: 1,
-          },
-        },
-        {
-          team1: {
-            name: "اسم الفريق",
-            logo: "/user-images/user.png",
+            // players: [{ name: "لاعب 3", yellowCard: true, redCard: false }],
             players: [],
           },
           team2: {
             name: "اسم الفريق",
             logo: "/user-images/user.png",
+            // players: [{ name: "لاعب 3", yellowCard: false, redCard: true }],
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
+          // ended: {
+          //   team1Score: 1,
+          //   team2Score: 1,
+          // },
           ended: null,
         },
         {
@@ -46,7 +35,21 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:50",
           ended: null,
         },
       ],
@@ -66,7 +69,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -80,7 +83,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -94,13 +97,13 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
     },
     {
-      roundTitle: "الجولة الثالثة",
+      roundTitle: "الجولة الثالثه",
       roundDate: "الجمعة 12 / 12",
       matches: [
         {
@@ -114,7 +117,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -128,7 +131,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -142,7 +145,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
@@ -162,7 +165,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -176,7 +179,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -190,7 +193,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
@@ -210,7 +213,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -224,7 +227,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -238,7 +241,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
@@ -258,7 +261,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -272,7 +275,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -286,7 +289,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
@@ -306,7 +309,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "03:40",
           ended: null,
         },
         {
@@ -320,7 +323,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:15",
           ended: null,
         },
         {
@@ -334,7 +337,7 @@ function Matchs() {
             logo: "/user-images/user.png",
             players: [],
           },
-          time: "04:00",
+          time: "04:50",
           ended: null,
         },
       ],
