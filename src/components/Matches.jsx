@@ -16,7 +16,10 @@ function Matchs() {
             players: [{ name: "لاعب 3", yellowCard: false, redCard: true }],
           },
           time: "04:00",
-          ended: null,
+          ended: {
+            team1Score: 1,
+            team2Score: 1,
+          },
         },
         {
           team1: {
@@ -30,7 +33,10 @@ function Matchs() {
             players: [],
           },
           time: "04:00",
-          ended: null,
+          ended: {
+            team1Score: 1,
+            team2Score: 1,
+          },
         },
         {
           team1: {
@@ -81,7 +87,10 @@ function Matchs() {
             players: [],
           },
           time: "04:00",
-          ended: null,
+          ended: {
+            team1Score: 1,
+            team2Score: 1,
+          },
         },
         {
           team1: {

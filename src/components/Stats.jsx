@@ -91,7 +91,7 @@ function Stats() {
   };
 
   const visibleRows = useMemo(() => {
-    return [...rows].sort(getComparator(order, orderBy)); // استخدام نسخة جديدة من الصفيف
+    return [...rows].sort(getComparator(order, orderBy));
   }, [order, orderBy]);
 
   return (

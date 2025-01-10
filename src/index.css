@@ -24,7 +24,6 @@
 
 body {
   direction: rtl;
-  /* background-color: #eee; */
   background-image: url(/src/assets/background.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -44,12 +43,11 @@ body {
   text-align: center;
   backdrop-filter: blur(30px);
   background-color: #5280d64d;
-  /* border-radius: 0 0 30px 30px; */
   box-shadow: 0 10px 40px 0 #25485c8f;
 }
 
 .container .header .title {
-  font-size: clamp(25px, 4vw, 40px);
+  font-size: clamp(30px, 4vw, 40px);
   text-align: center;
 }
 
@@ -67,7 +65,7 @@ body {
   padding: 10px;
   width: 150px;
   background-color: #19253f71;
-  font-size: clamp(20px, 2vw, 30px);
+  font-size: clamp(18px, 2vw, 30px);
   cursor: pointer;
   color: #ddd;
   font-weight: 600;
@@ -112,12 +110,12 @@ body {
 }
 
 .content .matches .round .round-title {
-  font-size: clamp(15px, 3vw, 25px);
+  font-size: clamp(22px, 3vw, 30px);
   margin-bottom: 10px;
 }
 
 .content .matches .round .round-date {
-  font-size: clamp(12px, 3vw, 20px);
+  font-size: clamp(15px, 3vw, 22px);
 }
 
 .content .match {
@@ -132,9 +130,17 @@ body {
 
 .content .match .team {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   gap: 5px;
+}
+
+.content .match .team:nth-child(1){
+  flex-basis: 45%;
+}
+.content .match .team:nth-child(3){
+  justify-content: end;
+  flex-basis: 45%;
 }
 
 .content .match .team img {
@@ -149,8 +155,10 @@ body {
 }
 
 .content .match .team h3 {
-  font-size: clamp(12px, 3vw, 30px);
+  font-size: clamp(15px, 3vw, 30px);
+  word-wrap: break-word;
   font-weight: 400;
+  margin: 10px 0;
 }
 
 .content .match .details {
