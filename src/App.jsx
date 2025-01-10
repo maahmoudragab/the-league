@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Matches from "./components/Matches";
 import Stats from "./components/Stats";
+import TopScorers from "./components/TopScorers";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("matches");
@@ -22,10 +23,16 @@ function App() {
           >
             الأحصائيات
           </button>
+          <button
+            className={activeComponent === "top scorers" ? "active" : ""}
+            onClick={() => setActiveComponent("top scorers")}
+          >
+            الهدافين
+          </button>
         </div>
       </div>
       <div className="content">
-        {activeComponent === "matches" ? <Matches /> : <Stats />}
+        {activeComponent === "matches" ? <Matches /> : activeComponent === "top scorers" ? <TopScorers/> : activeComponent === "stats" ? <Stats /> : ""}
       </div>
     </div>
   );

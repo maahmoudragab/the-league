@@ -25,11 +25,12 @@
 body {
   direction: rtl;
   background-image: url(/src/assets/background.jpg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed; /* تثبيت الخلفية */
   min-height: 100vh;
-  font-family: Cairo;
+  font-family: Cairo, sans-serif;
 }
 
 .container {
@@ -77,6 +78,11 @@ body {
 }
 
 .container .header .buttons button:nth-child(2) {
+  border-left: 1px solid #89baff82;
+  border-radius: 0;
+}
+
+.container .header .buttons button:nth-child(3) {
   border-radius: 10px 0 0 10px;
 }
 
@@ -134,10 +140,11 @@ body {
   gap: 5px;
 }
 
-.content .match .team:nth-child(1){
+.content .match .team:nth-child(1) {
   flex-basis: 45%;
 }
-.content .match .team:nth-child(3){
+
+.content .match .team:nth-child(3) {
   justify-content: end;
   flex-basis: 45%;
 }
@@ -195,15 +202,14 @@ body {
   font-size: clamp(20px, 3vw, 35px);
 }
 
-.table-container {
-  margin: 0 auto;
+.table-container,
+.table-players {
   max-width: 1100px;
+  margin: 0 auto;
   overflow-x: auto;
-  border-radius: 15px;
 }
 
-/* Table */
-table {
+.table-container table {
   width: 100%;
   min-width: 600px;
   border-collapse: collapse;
@@ -213,48 +219,124 @@ table {
   backdrop-filter: blur(30px);
 }
 
-table thead {
+.table-container table thead {
   background-color: #19253f71;
 }
 
-table thead th,
-table tbody td {
+.table-container table thead th,
+.table-container table tbody td {
   border: 1px solid #89baffb2;
+  word-wrap: break-word;
+  /* التمدد لتجنب تكسير النص */
 }
 
-table thead th {
+/* Header Cells */
+.table-container table thead th {
   padding: 15px;
-  font-size: 25px;
+  font-size: 18px;
+  text-align: center;
 }
 
-table tbody td {
-  padding: 25px 15px;
-  font-size: 20px;
+/* Data Cells */
+.table-container table tbody td {
+  padding: 15px 10px;
+  font-size: 16px;
   font-weight: 500;
+  text-align: center;
 }
 
-tbody tr:nth-child(odd) {
+/* Make Name Column Larger */
+.table-container table td:nth-child(2),
+.table-container table th:nth-child(2) {
+  width: 250px;
+  min-width: 200px;
+  text-align: right;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  .table-container table td,
+  .table-container table th {
+    font-size: 14px;
+    padding: 10px 5px;
+  }
+
+  .table-container table td:nth-child(2),
+  .table-container table th:nth-child(2) {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .table-container table {
+    font-size: 12px;
+  }
+
+  .table-container table td:nth-child(2),
+  .table-container table th:nth-child(2) {
+    min-width: 120px;
+  }
+}
+
+.table-container tbody tr:nth-child(odd) {
   background-color: #3a4e7771;
 }
 
-tbody tr:nth-child(even) {
+.table-container tbody tr:nth-child(even) {
   background-color: #19253f71;
-
 }
 
-td:not(:nth-child(2)),
-th:not(:nth-child(2)) {
-  width: 30px;
-  max-width: 120px;
+.table-players table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  color: white;
+  background-color: #00000042;
+  backdrop-filter: blur(30px);
 }
 
-th:nth-child(n+3) {
-  cursor: pointer;
+.table-players table thead {
+  background-color: #19253f71;
 }
 
-td:nth-child(2),
-th:nth-child(2) {
-  min-width: 200px;
+.table-players table thead th,
+.table-players table tbody td {
+  border: 1px solid #89baffb2;
+  word-wrap: break-word;
+}
+
+.table-players table thead th {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.table-players table tbody td {
+  padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.table-players table thead th:nth-child(1),
+.table-players table tbody td:nth-child(1) {
+  width: 40%;
+  text-align: right;
+}
+
+.table-players table thead th:nth-child(2),
+.table-players table tbody td:nth-child(2),
+.table-players table thead th:nth-child(3),
+.table-players table tbody td:nth-child(3) {
+  width: auto;
+  text-align: center;
+}
+
+.table-players tbody tr:nth-child(odd) {
+  background-color: #3a4e7771;
+}
+
+.table-players tbody tr:nth-child(even) {
+  background-color: #19253f71;
 }
 
 ::-webkit-scrollbar {

@@ -6,12 +6,12 @@ function Matchs() {
       matches: [
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [],
+            players: [{ name: "لاعب 3", yellowCard: true, redCard: false }],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [{ name: "لاعب 3", yellowCard: false, redCard: true }],
           },
@@ -23,34 +23,28 @@ function Matchs() {
         },
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [{ name: "لاعب 1", yellowCard: true, redCard: false }],
+            players: [],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
           time: "04:00",
-          ended: {
-            team1Score: 1,
-            team2Score: 1,
-          },
+          ended: null,
         },
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [{ name: "لاعب 1", yellowCard: false, redCard: true }],
+            players: [],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [
-              { name: "لاعب 3", yellowCard: false, redCard: true },
-              { name: "لاعب 3", yellowCard: true, redCard: false },
-            ],
+            players: [],
           },
           time: "04:00",
           ended: null,
@@ -58,17 +52,17 @@ function Matchs() {
       ],
     },
     {
-      roundTitle: "الجولة الأولى",
+      roundTitle: "الجولة الثانيه",
       roundDate: "الجمعة 12 / 12",
       matches: [
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
@@ -77,29 +71,266 @@ function Matchs() {
         },
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
-            players: [{ name: "لاعب 1", yellowCard: true, redCard: false }],
+            players: [],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
           time: "04:00",
-          ended: {
-            team1Score: 1,
-            team2Score: 1,
-          },
+          ended: null,
         },
         {
           team1: {
-            name: "1 فريق",
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
           team2: {
-            name: "فريق 2",
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+      ],
+    },
+    {
+      roundTitle: "الجولة الثالثة",
+      roundDate: "الجمعة 12 / 12",
+      matches: [
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+      ],
+    },
+    {
+      roundTitle: "الجولة الرابعة",
+      roundDate: "الجمعة 12 / 12",
+      matches: [
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+      ],
+    },
+    {
+      roundTitle: "الجولة الخامسة",
+      roundDate: "الجمعة 12 / 12",
+      matches: [
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+      ],
+    },
+    {
+      roundTitle: "الجولة السادسة",
+      roundDate: "الجمعة 12 / 12",
+      matches: [
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+      ],
+    },
+    {
+      roundTitle: "الجولة السابعة",
+      roundDate: "الجمعة 12 / 12",
+      matches: [
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
+        },
+        {
+          team1: {
+            name: "اسم الفريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "اسم الفريق",
             logo: "/user-images/user.png",
             players: [],
           },
@@ -160,7 +391,6 @@ function Matchs() {
               <div className="team">
                 <h3>{match.team2.name}</h3>
                 <img src={match.team2.logo} alt={match.team2.name} />
-
                 <div
                   className="player"
                   style={{
