@@ -101,7 +101,7 @@ body {
 .content .matches .round {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 15px;
   padding: 10px;
   background-color: #00000042;
   backdrop-filter: blur(30px);
@@ -111,7 +111,6 @@ body {
 
 .content .matches .round .round-title {
   font-size: clamp(22px, 3vw, 30px);
-  margin-bottom: 10px;
 }
 
 .content .matches .round .round-date {

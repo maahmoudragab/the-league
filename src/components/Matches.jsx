@@ -131,7 +131,7 @@ function Matchs() {
                     gap: "5px",
                     right: "10%",
                     position: "absolute",
-                    bottom: "100%",
+                    bottom: "85%",
                   }}
                 >
                   {match.team1.players.map((player) => (
@@ -167,7 +167,7 @@ function Matchs() {
                     display: "flex",
                     gap: "5px",
                     position: "absolute",
-                    bottom: "100%",
+                    bottom: "85%",
                     left: "10%",
                   }}
                 >
