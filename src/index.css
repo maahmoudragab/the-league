@@ -1,0 +1,249 @@
+@font-face {
+  font-family: Cairo;
+  src: url(/public/fonts/Cairo/Cairo-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(/public/fonts/Cairo/Cairo-Medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Cairo;
+  src: url(/public/fonts/Cairo/Cairo-Bold.ttf);
+  font-weight: 600;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  direction: rtl;
+  /* background-color: #eee; */
+  background-image: url(/src/assets/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  font-family: Alexandria;
+}
+
+.container {
+  width: 100%;
+  color: white;
+}
+
+/* Header */
+.container .header {
+  padding: 20px 10px;
+  text-align: center;
+  backdrop-filter: blur(30px);
+  background-color: #5280d64d;
+  /* border-radius: 0 0 30px 30px; */
+  box-shadow: 0 10px 40px 0 #25485c8f;
+}
+
+.container .header .title {
+  font-size: clamp(25px, 4vw, 40px);
+  text-align: center;
+}
+
+.container .header .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.container .header .buttons button {
+  outline: none;
+  border: none;
+  padding: 10px;
+  width: 150px;
+  background-color: #19253f71;
+  font-size: clamp(20px, 2vw, 30px);
+  cursor: pointer;
+  color: #ddd;
+  font-weight: 600;
+}
+
+.container .header .buttons button:nth-child(1) {
+  border-left: 1px solid #89baff82;
+  border-radius: 0 10px 10px 0;
+}
+
+.container .header .buttons button:nth-child(2) {
+  border-radius: 10px 0 0 10px;
+}
+
+.container .header .buttons button.active {
+  color: #5ac2ff;
+}
+
+.container .content {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+/* Matches */
+.content .matches {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1100px;
+  gap: 20px;
+}
+
+.content .matches .round {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  background-color: #00000042;
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.content .matches .round .round-title {
+  font-size: clamp(15px, 3vw, 25px);
+}
+
+.content .matches .round .round-date {
+  font-size: clamp(12px, 3vw, 20px);
+}
+
+.content .match {
+  border-radius: 50px;
+  background-color: #19253f71;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.content .match .team {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.content .match .team img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .content .match .team img {
+    width: 50px;
+  }
+}
+
+.content .match .team h3 {
+  font-size: clamp(12px, 3vw, 30px);
+  font-weight: 400;
+}
+
+.content .match .details {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.content .match .details .time {
+  font-size: clamp(20px, 3vw, 28px);
+  font-weight: 400;
+}
+
+.content .match .details .ended {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.content .match .details .ended h3 {
+  font-size: clamp(12px, 3vw, 20px);
+  font-weight: 500;
+  background-color: #f44336;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.content .match .details .ended h4 {
+  font-size: clamp(20px, 3vw, 35px);
+}
+
+.table-container {
+  margin: 0 auto;
+  max-width: 1100px;
+  overflow-x: auto;
+  border-radius: 15px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  min-width: 600px;
+  border-collapse: collapse;
+  text-align: right;
+  color: white;
+  background-color: #00000042;
+  backdrop-filter: blur(30px);
+}
+
+table thead {
+  background-color: #19253f71;
+}
+
+table thead th,
+table tbody td {
+  border: 1px solid #89baffb2;
+}
+
+table thead th {
+  padding: 15px;
+  font-size: 25px;
+}
+
+table tbody td {
+  padding: 25px 15px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #3a4e7771;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #19253f71;
+
+}
+
+td:not(:nth-child(2)),
+th:not(:nth-child(2)) {
+  width: 30px;
+  max-width: 120px;
+}
+
+th:nth-child(n+3) {
+  cursor: pointer;
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+  min-width: 200px;
+}
