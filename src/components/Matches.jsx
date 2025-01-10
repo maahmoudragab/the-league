@@ -5,22 +5,49 @@ function Matchs() {
       roundDate: "الجمعة 12 / 12",
       matches: [
         {
-          team1: { name: "فريق 1", logo: "/user-images/user.png" },
-          team2: { name: "فريق 2", logo: "/user-images/user.png" },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [{ name: "لاعب 3", yellowCard: false, redCard: true }],
+          },
           time: "04:00",
           ended: null,
         },
         {
-          team1: { name: "فريق 3", logo: "/user-images/user.png" },
-          team2: { name: "فريق 4", logo: "/user-images/user.png" },
-          time: null,
-          ended: { team1Score: 1, team2Score: 1 },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [{ name: "لاعب 1", yellowCard: true, redCard: false }],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
         },
         {
-          team1: { name: "فريق 3", logo: "/user-images/user.png" },
-          team2: { name: "فريق 4", logo: "/user-images/user.png" },
-          time: null,
-          ended: { team1Score: 1, team2Score: 1 },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [{ name: "لاعب 1", yellowCard: false, redCard: true }],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [
+              { name: "لاعب 3", yellowCard: false, redCard: true },
+              { name: "لاعب 3", yellowCard: true, redCard: false },
+            ],
+          },
+          time: "04:00",
+          ended: null,
         },
       ],
     },
@@ -29,22 +56,46 @@ function Matchs() {
       roundDate: "الجمعة 12 / 12",
       matches: [
         {
-          team1: { name: "فريق 1", logo: "/user-images/user.png" },
-          team2: { name: "فريق 2", logo: "/user-images/user.png" },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [],
+          },
           time: "04:00",
           ended: null,
         },
         {
-          team1: { name: "فريق 3", logo: "/user-images/user.png" },
-          team2: { name: "فريق 4", logo: "/user-images/user.png" },
-          time: null,
-          ended: { team1Score: 1, team2Score: 1 },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [{ name: "لاعب 1", yellowCard: true, redCard: false }],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
         },
         {
-          team1: { name: "فريق 3", logo: "/user-images/user.png" },
-          team2: { name: "فريق 4", logo: "/user-images/user.png" },
-          time: null,
-          ended: { team1Score: 1, team2Score: 1 },
+          team1: {
+            name: "1 فريق",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          team2: {
+            name: "فريق 2",
+            logo: "/user-images/user.png",
+            players: [],
+          },
+          time: "04:00",
+          ended: null,
         },
       ],
     },
@@ -54,14 +105,37 @@ function Matchs() {
     <div className="matches">
       {data.map((round, index) => (
         <div className="round" key={index}>
-          <h2 className="round-title">{round.roundTitle}</h2>
-          <h2 className="round-date">{round.roundDate}</h2>
+          <div>
+            <h2 className="round-title">{round.roundTitle}</h2>
+            <h2 className="round-date">{round.roundDate}</h2>
+          </div>
           {round.matches.map((match, matchIndex) => (
             <div className="match" key={matchIndex}>
               <div className="team">
                 <img src={match.team1.logo} alt={match.team1.name} />
                 <h3>{match.team1.name}</h3>
+
+                <div
+                  className="player"
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    right: "10%",
+                    position: "absolute",
+                    bottom: "100%",
+                  }}
+                >
+                  {match.team1.players.map((player) => (
+                    <>
+                      {player.yellowCard && (
+                        <span className="yellow-card">🟨</span>
+                      )}
+                      {player.redCard && <span className="red-card">🟥</span>}
+                    </>
+                  ))}
+                </div>
               </div>
+
               <div className="details">
                 {match.ended ? (
                   <div className="ended">
@@ -73,9 +147,30 @@ function Matchs() {
                   <h3 className="time">{match.time}</h3>
                 )}
               </div>
+
               <div className="team">
                 <h3>{match.team2.name}</h3>
                 <img src={match.team2.logo} alt={match.team2.name} />
+
+                <div
+                  className="player"
+                  style={{
+                    display: "flex",
+                    gap: "5px",
+                    position: "absolute",
+                    bottom: "100%",
+                    left: "10%",
+                  }}
+                >
+                  {match.team2.players.map((player) => (
+                    <>
+                      {player.yellowCard && (
+                        <span className="yellow-card">🟨</span>
+                      )}
+                      {player.redCard && <span className="red-card">🟥</span>}
+                    </>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

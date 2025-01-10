@@ -103,7 +103,7 @@ body {
 .content .matches .round {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 30px;
   padding: 10px;
   background-color: #00000042;
   backdrop-filter: blur(30px);
@@ -113,6 +113,7 @@ body {
 
 .content .matches .round .round-title {
   font-size: clamp(15px, 3vw, 25px);
+  margin-bottom: 10px;
 }
 
 .content .matches .round .round-date {
@@ -126,6 +127,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 
 .content .match .team {
@@ -246,4 +248,20 @@ th:nth-child(n+3) {
 td:nth-child(2),
 th:nth-child(2) {
   min-width: 200px;
+}
+
+::-webkit-scrollbar {
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #59c0fe;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4aa2d8;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #def2ff;
 }
