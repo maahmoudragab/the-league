@@ -101,7 +101,7 @@ body {
 .content .matches .round {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   padding: 10px;
   background-color: #00000042;
   backdrop-filter: blur(30px);
